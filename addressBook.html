@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Address Book</title>
+        <link rel="stylesheet" href="addressBook.css"/>
+        <script  src="js/addressBook.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="header">
+                <h1 class ="maxee"> maxee's address book </h1>
+            </div>
+
+            <div class="wrapper">
+                <div class="righttag" >
+                    <h2 class ="list">List of Contacts</h2>
+                    <ul id="myContacts"></ul>
+                </div>
+                        
+                <div class="lefttag">
+                    <h2 class = "Add"> add new Contact</h2>
+                    <form name="contactBook">
+                    <div class="formGroup">
+                        <label for="surname">Surname</label>
+                        <input type="text" name="surname" id="surname" class="formElements" required>
+
+                    </div>
+                    <div>
+                        <label for="othernames">Othernames</label>
+                        <input type="text" name="othernames" id="othernames" class="formElements" required>
+                    </div>
+                    <div>
+                        <label for="homeAddress">Home Address</label>
+                        <textarea name="homeAddress" id="homeAddress" cols="30" rows="10" class="formElements" required></textarea>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="formElements" required>
+                    </div>
+                    <div>
+                        <label for="mobileNumber">Mobile number</label>
+                        <input type="tel" name="mobileNumber" id="mobileNumber" class="formElements" required>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit" class="submit">Save Contact</button>
+                    </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+    </body>
+</html>
